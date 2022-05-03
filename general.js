@@ -60,4 +60,7 @@ var array = ["uno", "dos"];
 for (let index = 0; index < array.length; index++) {
     const element = array[index];
     
+//Este es un ejemplo
+while (10 < 100) {
+    console.log('Ejemplo...');
 }

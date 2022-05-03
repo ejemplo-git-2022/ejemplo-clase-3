@@ -47,10 +47,17 @@ $(function() {
 });
 
 //Nuevo comentario de otro
-var idEmpleado = 10;
+var idEmpleadoOtro = 10;
 
 //Ejemplo de codigo
-var saldo = 10000;
+var saldo = 50;
 if(saldo > 100) {
     console.log('Si es mayor que 100');
+}
+
+var array = ["uno", "dos"];
+
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
 }

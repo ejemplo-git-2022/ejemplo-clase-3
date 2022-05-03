@@ -20,7 +20,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#formContacto").validate();
+    $("#cambio-de-otro-formContacto").validate();
 
     $("#buttonEnviarFormularioConAjax").on('click', function() {
         var formValido = $('#formContacto').valid();
@@ -28,6 +28,7 @@ $(document).ready(function() {
         if(formValido == true) {
 
             $.blockUI();
+            $('#test').hide();
 
             var datosForm = $('#formContacto').serialize();
             var llamadaAjax = $.post("guardar_form_ajax.php", datosForm);
@@ -45,3 +46,6 @@ $(document).ready(function() {
     });
 
 });
+
+//Nuevo comentario de otro
+var idEmpleado = 10;

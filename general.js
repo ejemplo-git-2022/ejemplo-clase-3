@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 
     $('.componente-select2').select2();
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#formContacto").validate();
+    $("#formContacto-nosequepasa").validate();
 
     $("#buttonEnviarFormularioConAjax").on('click', function() {
         var formValido = $('#formContacto').valid();
@@ -39,9 +39,14 @@ $(document).ready(function() {
     
             llamadaAjax.fail(function(jqXHR, textStatus, errorThrown) {
                 $.unblockUI();
-                toastr.error(respuesta);
             });
         }
     });
 
 });
+
+//Ejemplo de codigo
+var saldo = 10000;
+if(saldo > 100) {
+    console.log('Si es mayor que 100');
+}

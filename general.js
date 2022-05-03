@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 
     $('.componente-select2').select2();
 
@@ -40,7 +40,6 @@ $(document).ready(function() {
     
             llamadaAjax.fail(function(jqXHR, textStatus, errorThrown) {
                 $.unblockUI();
-                toastr.error(respuesta);
             });
         }
     });
@@ -49,3 +48,9 @@ $(document).ready(function() {
 
 //Nuevo comentario de otro
 var idEmpleado = 10;
+
+//Ejemplo de codigo
+var saldo = 10000;
+if(saldo > 100) {
+    console.log('Si es mayor que 100');
+}

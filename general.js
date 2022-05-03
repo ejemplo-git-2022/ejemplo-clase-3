@@ -47,10 +47,15 @@ $(function() {
 });
 
 //Nuevo comentario de otro
-var idEmpleado = 10;
-
+var idEmpleadoOriginal = 10;
+var idProducto = 434;
 //Ejemplo de codigo
-var saldo = 10000;
+var saldo = 90000;
 if(saldo > 100) {
     console.log('Si es mayor que 100');
+}
+
+//Este es un ejemplo
+while (10 < 100) {
+    console.log('Ejemplo...');
 }
